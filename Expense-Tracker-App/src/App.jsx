@@ -34,7 +34,7 @@ function App() {
       case 4:
         return <Expenses/>
       default:
-        return <Dashboard/>
+        return <Income/>
     }
   }
 

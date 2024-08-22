@@ -14,7 +14,8 @@ function Gooey() {
         100%{
           transform: translate(0, 0);
         }
-  `;
+      }
+        `;
 
 
   const Gooey = styled.div`
