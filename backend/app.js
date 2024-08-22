@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000
 //middlewares
 app.use(express.json())
 app.use(cors({
-  origin: 'https://exptracker-frontend.onrender.com/'  
+  origin: 'https://exptracker-frontend.onrender.com'  
 }));
 
 app.get('/api/v1/test', (req, res) => {
