@@ -6,11 +6,19 @@ const app = express()
 
 require('dotenv').config()
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000
 
 //middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: 'https://exptracker-frontend.onrender.com/'  
+}));
+
+app.get('/api/v1/test', (req, res) => {
+  res.send('Backend is working!');
+});
+
+
 
 //routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
