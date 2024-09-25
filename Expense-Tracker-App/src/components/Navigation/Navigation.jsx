@@ -4,13 +4,14 @@ import menuItems from '../../utils/MenuItems';
 import bg from '../../img/bg.jpeg';
 import { signout } from '../../utils/Icons';
 function Navigation({active, setActive}) {
+  const {totalBalance} = useGlobalContext();
   return (
     <NavCont>
         <div className="user-con">
             <img src={bg} alt="" />
             <div className="text">
                 <h2>Arshil</h2>
-                <p>Your Money</p>
+                <p>Balance: Rs {totalBalance()}</p>
             </div>
         </div>
         <ul className="menu-items">
