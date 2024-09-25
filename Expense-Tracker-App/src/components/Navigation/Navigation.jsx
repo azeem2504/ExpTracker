@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import menuItems from '../../utils/MenuItems';
 import bg from '../../img/bg.jpeg';
 import { signout } from '../../utils/Icons';
+import { useGlobalContext } from '../../context/globalContext';
 function Navigation({active, setActive}) {
   const {totalBalance} = useGlobalContext()
   return (
