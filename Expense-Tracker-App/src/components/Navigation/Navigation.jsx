@@ -4,7 +4,7 @@ import menuItems from '../../utils/MenuItems';
 import bg from '../../img/bg.jpeg';
 import { signout } from '../../utils/Icons';
 function Navigation({active, setActive}) {
-  const {totalBalance} = useGlobalContext();
+  const {totalBalance} = useGlobalContext()
   return (
     <NavCont>
         <div className="user-con">
